@@ -1,0 +1,49 @@
+/* 전체 배경 색상 설정 - 본문폭과 본문 색 나누기위해 */
+body {
+    margin: 0;  /* 화면 전체에 여백을 없애주기 */
+    background-color: gray;  /* 배경색을 회색으로 설정 */
+}
+
+/* 본문 컨테이너 */
+.container {
+    max-width: 800px;  /* 본문의 최대 넓이를 800px로 설정 */
+    margin: 0 auto;  /* 본문을 화면 중앙에 위치시키기 위해 좌우 여백을 자동으로 설정 >>> 화면이 커지더라도 본문은 중앙에 고정 */
+    padding: 20px;  /* 본문과 화면 경계 사이에 여백 */
+}
+
+.first-paragraph {
+    font-size: 2em;  /* 첫 번째 문단의 글자 크기를 2배로 키우기 */
+    font-weight: bold;  /* 글자를 굵게 만들기 */
+}
+
+.second-parapraph {
+    font-size: 1.3em;  /* 두 번째 문단의 글자 크기를 1.3배로 설정 */
+    font-weight: bold;  /* 글자를 굵게 만들기 */
+}
+
+/* 본문 */
+.content {
+    background-color: white;  /* 본문 배경을 흰색으로 설정 */
+    padding: 20px;  /* 본문 안에 여백을 추가 */
+}
+
+/* 세 번째 문단을 두 섹션으로 나누기 위해 flex 사용 */
+.third-paragraph {
+    display: flex; /* 두 섹션을 나란히 배치하기 위해 */
+    /*justify-content: space-between; 두 섹션 사이에 공간을 똑같이 배치 */
+}
+
+/* 왼쪽 섹션 */
+.left-section {
+    flex: 1; /* 왼쪽 섹션이 오른쪽 섹션보다 작게 설정되도록 1로 설정 */
+    padding: 10px; /* 왼쪽 섹션에 여백 추가 */
+}
+
+/* 오른쪽 섹션에 포스트잇 느낌 추가 */
+.right-section {
+    display: 
+    flex: 2; /* 오른쪽 섹션을 왼쪽 섹션보다 두 배 크기로 설정 */
+    padding: 20px; /* 오른쪽 섹션 여백을 추가 */
+    background-color: yellow; /* 오른쪽 섹션의 배경을 노란색으로 설정하여 포스트잇처럼 보이게 만들기 */
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2); /* 오른쪽 섹션에 그림자 효과를 추가하여 포스트잇처럼 입체감을 주기 */
+}
